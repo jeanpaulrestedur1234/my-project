@@ -10,7 +10,8 @@
   "dependencies": {
     "core-js": "^3.8.3",
     "face-api.js": "^0.22.2",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "vue-router": "^4.4.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
