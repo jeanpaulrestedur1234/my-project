@@ -8,6 +8,8 @@
         <li>
           <router-link to="/facial_scanner">video face</router-link>
         </li>
+
+
       </ul>
     </nav>
   </template>

@@ -14,6 +14,7 @@ const routes = [
     component: facial_scanner
   },
 
+
 ];
 
 const router = createRouter({
