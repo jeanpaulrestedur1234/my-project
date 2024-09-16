@@ -24,14 +24,14 @@ export default{
  .panel-body{
     font-family: 'Arizonia', cursive;
     font-size: 24px;
-    color: #6e6e6e;
+    color: #9b4949;
  }
 
  .quote{
     cursor: pointer;
  }
  .quote::hover {
-    background-color: rgb(113, 184, 59);
+    background-color: rgb(160, 168, 154);
 
 
  }
