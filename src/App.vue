@@ -9,14 +9,14 @@
 import NavigateComponent from './components/NavigateComponent.vue';
 
 export default {
-  name: 'App',
+
   components: {
     NavigateComponent,
   },
 };
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
