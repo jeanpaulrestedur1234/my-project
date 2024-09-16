@@ -1,9 +1,25 @@
 <template>
   <div id="app">
-    <Facial_scanner />
+    <NavigateComponent />
+    <router-view></router-view>
   </div>
-
 </template>
-<script setup>
-import Facial_scanner from './components/facial_scanner.vue';
+
+<script>
+import NavigateComponent from './components/NavigateComponent.vue';
+
+export default {
+
+  components: {
+    NavigateComponent,
+  },
+};
 </script>
+
+<style scoped>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-top: 60px;
+}
+</style>
