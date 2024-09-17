@@ -13,9 +13,8 @@
 
 </template>
 <script>
-
-import ListComponent from './Forms components/ListComponent.vue';
-import { fruitMixin } from './Forms components/fuitMixin';
+import ListComponent from '../Forms components/ListComponent.vue';
+import { fruitMixin } from '../Forms components/fuitMixin';
 
 export default {
     mixins: [fruitMixin],

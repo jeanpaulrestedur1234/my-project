@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import NavigateComponent from './components/NavigateComponent.vue';
+import NavigateComponent from './components/pages/NavigateComponent.vue';
 
 export default {
 

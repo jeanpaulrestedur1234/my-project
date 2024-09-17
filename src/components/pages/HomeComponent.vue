@@ -1,4 +1,6 @@
 <template>
+       <h1>Quotes</h1>
+       <hr>
 
       <appNewquote   @quoteAdded="NewQuote"></appNewquote>
       <br>
@@ -8,8 +10,8 @@
   
   </template>
   <script>
-  import QuoteGrid from './Quotes/QuoteGrid.vue';
-  import NewQuote from './Quotes/NewQuote.vue';
+  import QuoteGrid from '../Quotes/QuoteGrid.vue';
+ import NewQuote from '../Quotes/NewQuote.vue';
   export default{
       data: function(){
           return{
