@@ -19,26 +19,18 @@
 <script>
 
 import ListComponent from './Forms components/ListComponent.vue';
+import { fruitMixin } from './Forms components/fuitMixin';
 
 export default {
+    mixins: [fruitMixin],
     data() {
         return {
             text: 'hello there',
-            fruits: ['Aple', 'Banana', "Mango", "Melon"],
-            filterText: ''
+
         }
     },
 
 
-    computed: {
-        filteredFruits() {
-            return this.fruits.filter((element) => {
-                return element.match(this.filterText);
-
-            })
-        }
-
-    },
     components:{
         appList:ListComponent
 

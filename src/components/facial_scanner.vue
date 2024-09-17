@@ -23,6 +23,7 @@ export default {
     };
   },
   async mounted() {
+    
     // Cargar los modelos desde la carpeta 'public/models'
     await faceapi.nets.tinyFaceDetector.loadFromUri('/models');
     await faceapi.nets.faceLandmark68Net.loadFromUri('/models');
@@ -31,17 +32,20 @@ export default {
     const video = this.$refs.video;
     video.width = 640;  // Set an appropriate width
     video.height = 480; // Set an appropriate height
-
-    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-      // Lógica para usar getUserMedia
-
+    try{
       video.srcObject = await navigator.mediaDevices.getUserMedia({ video: {} });
       video.onloadeddata = () => this.detectFaces();
-    } else {
+
+
+
+    }catch(error){
+
       console.error('getUserMedia no es soportado en este navegador.');
-
+      console.log(error)
     }
+    
 
+    
 
 
   },

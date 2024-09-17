@@ -14,7 +14,7 @@
 import { fruitMixin } from './fuitMixin';
 export default {
     
-    mixin: [fruitMixin]
+    mixins: [fruitMixin]
 
 }
 
