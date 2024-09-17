@@ -11,6 +11,9 @@
         <li>
           <router-link to="/filters" >filters</router-link>
         </li>
+        <li>
+          <router-link to="/animation" >Animations</router-link>
+        </li>
 
 
       </ul>
