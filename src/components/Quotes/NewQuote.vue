@@ -29,3 +29,12 @@ export default {
 
 
 </script>
+<style>
+form{
+    text-align: left
+}
+button{
+    padding: 1%;
+    margin-top: 2%;
+}
+</style>

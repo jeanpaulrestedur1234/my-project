@@ -23,15 +23,25 @@ export default{
 <style>
  .panel-body{
     font-family: 'Arizonia', cursive;
-    font-size: 24px;
-    color: #9b4949;
+    font-size: 16px;
+    color: #796e6e;
+    background-color: rgb(197, 197, 212);
+    
+    border-radius: 8px;
+    
+ 
  }
+ .panel {
+    margin-bottom: 20px; /* Espacio entre paneles */
+}
+
 
  .quote{
     cursor: pointer;
+    padding: auto;
  }
  .quote::hover {
-    background-color: rgb(160, 168, 154);
+    background-color: rgb(30, 46, 19);
 
 
  }
