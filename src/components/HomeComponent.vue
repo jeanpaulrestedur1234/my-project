@@ -1,10 +1,10 @@
 <template>
-  <div class="container">
+
       <appNewquote   @quoteAdded="NewQuote"></appNewquote>
       <br>
       <app-quote-grid :quotes="quotes"  @quoteDeleted="deletequote"></app-quote-grid>
       
-  </div>
+
   
   </template>
   <script>

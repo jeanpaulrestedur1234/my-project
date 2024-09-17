@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+ 
     <h1>Video</h1>
     <div>
       <video ref="video" autoplay muted playsinline></video>
@@ -9,7 +9,7 @@
       <input v-model="inputName" placeholder="Nombre del sujeto" />
       <button @click="sendNames">Guardar Nombre</button>
     </div>
-  </div>
+
 </template>
 
 <script>
@@ -19,7 +19,9 @@ export default {
   data() {
     return {
       inputName: '',
-      selectedFace: null
+      selectedFace: null,
+      operable: true,
+      stream: null
     };
   },
   async mounted() {
@@ -32,16 +34,14 @@ export default {
     const video = this.$refs.video;
     video.width = 640;  // Set an appropriate width
     video.height = 480; // Set an appropriate height
-    try{
-      video.srcObject = await navigator.mediaDevices.getUserMedia({ video: {} });
+    try {
+      this.stream = await navigator.mediaDevices.getUserMedia({ video: {} });
+      video.srcObject = this.stream;
       video.onloadeddata = () => this.detectFaces();
-
-
-
-    }catch(error){
-
+    } catch (error) {
       console.error('getUserMedia no es soportado en este navegador.');
-      console.log(error)
+      console.log(error);
+      this.operable = false;  // Cambiado a this.operable para reflejar el estado en el componente
     }
     
 
