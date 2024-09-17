@@ -28,13 +28,14 @@
             console.log('...........acac')
             console.log(index)
             this.quotes.splice(index,1)
+            
 
         }
 
       },
       components:{
-          appQuoteGrid:QuoteGrid,
-          appNewquote:NewQuote
+          appQuoteGrid: QuoteGrid,
+          appNewquote: NewQuote
       }
   }
   
