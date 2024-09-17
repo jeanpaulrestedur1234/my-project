@@ -3,6 +3,7 @@
             <h1>Animations</h1>
             <hr>
             <button class="btn btn-primary" @click="show = !show">alert</button>
+            <br><br>
             <transition name="fade">
                 <div class="alert alert-info" v-if="show">some info</div>
             </transition>
