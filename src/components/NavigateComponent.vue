@@ -8,6 +8,9 @@
         <li>
           <router-link to="/facial_scanner">video face</router-link>
         </li>
+        <li>
+          <router-link to="/filters" >filters</router-link>
+        </li>
 
 
       </ul>
@@ -29,6 +32,9 @@
   ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: flex-start; 
+
   }
   
   li {
