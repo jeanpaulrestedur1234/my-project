@@ -25,7 +25,7 @@ export default {
 <style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  text-align: center;
+  text-align: justify;
 
 }
 </style>

@@ -1,7 +1,7 @@
 // src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router';
 import facial_scanner from '@/components/pages/facial_scanner.vue';
-import QuoteComponent from '@/components/pages/Quotes/QuoteComponent.vue';
+import QuotesComponent from '@/components/pages/QuotesComponent.vue';
 import filtersComponent from '@/components/pages/filtersComponent.vue';
 import AnimationsComponent from '@/components/pages/AnimationsComponent.vue';
 import UserC from '@/components/pages/Users/UserC.vue';
@@ -9,11 +9,13 @@ import UserStart from '@/components/pages/Users/UserStart.vue';
 import UserDetail from '@/components/pages/Users/UserDetail.vue';
 import UserEdit from '@/components/pages/Users/UserEdit.vue';
 import vuexComponent from '@/components/pages/vuexComponent.vue';
+import FormComponent from '@/components/pages/formComponent.vue';
+
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: QuoteComponent
+    component: QuotesComponent
   },
   {
     path: '/facial_scanner',
@@ -30,6 +32,12 @@ const routes = [
     name: 'animation',
     component: AnimationsComponent
   },
+  {
+    path: '/form',
+    name: 'form',
+    component: FormComponent
+  },
+
   {
     path: '/user',
     name: 'user',

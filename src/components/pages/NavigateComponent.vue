@@ -21,6 +21,9 @@
       <li class="nav-item">
         <router-link class="nav-link " to="/vuex" exact-active-class="active">vuex</router-link>
       </li>
+      <li class="nav-item">
+        <router-link class="nav-link " to="/form" exact-active-class="active">form</router-link>
+      </li>
     </ul>
   </nav>
 
