@@ -4,8 +4,8 @@
         <p>{{ text }}</p>
         <hr>
         <input v-model="filterText">
-        <ul>
-            <li v-for="(fruit, index) in filteredFruits" :key="index">{{ fruit }}</li>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item" v-for="(fruit, index) in filteredFruits" :key="index">{{ fruit }}</li>
         </ul>
     </div>
 

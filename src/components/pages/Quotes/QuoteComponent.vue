@@ -2,7 +2,7 @@
     <div class="col-sm6 col-md-4 col-lg-6">
         <div class ="panel panel-default">
             <div class="panel-body quote">
-                <slot>   </slot>
+                <slot> </slot>
         
             </div>
 
@@ -16,7 +16,7 @@
 <script>
 export default{
 
-    props:['quotes']
+    
 }
 </script>
 

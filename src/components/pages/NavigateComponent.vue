@@ -4,7 +4,7 @@
   <nav>
     <ul class="nav nav-tabs">
       <li class="nav-item">
-        <router-link class="nav-link" to="/" exact-active-class="active" exact>Home</router-link>
+        <router-link class="nav-link" to="/" exact-active-class="active" exact>Quote</router-link>
       </li>
       <li class="nav-item">
         <router-link class="nav-link" to="/facial_scanner" exact-active-class="active">Facial Scan</router-link>

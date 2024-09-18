@@ -4,7 +4,7 @@
 
       <appNewquote   @quoteAdded="NewQuote"></appNewquote>
       <br>
-      <app-quote-grid :quotes="quotes"  @quoteDeleted="deletequote"></app-quote-grid>
+      <app-quote-grid   @quoteDeleted="deletequote"></app-quote-grid>
       
 
   
@@ -13,14 +13,7 @@
   import QuoteGrid from './Quotes/QuoteGrid.vue';
  import NewQuote from './Quotes/NewQuote.vue';
   export default{
-      data: function(){
-          return{
-              quotes:[
-                  'just a quote'
-              ],
-              maxQuotes:10
-          }
-      },
+      
       methods:{
         NewQuote(quote){
           this.quotes.push(quote)

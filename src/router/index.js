@@ -1,7 +1,7 @@
 // src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router';
 import facial_scanner from '@/components/pages/facial_scanner.vue';
-import HomeComponent from '@/components/pages/HomeComponent.vue';
+import QuoteComponent from '@/components/pages/Quotes/QuoteComponent.vue';
 import filtersComponent from '@/components/pages/filtersComponent.vue';
 import AnimationsComponent from '@/components/pages/AnimationsComponent.vue';
 import UserC from '@/components/pages/Users/UserC.vue';
@@ -13,7 +13,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeComponent
+    component: QuoteComponent
   },
   {
     path: '/facial_scanner',
