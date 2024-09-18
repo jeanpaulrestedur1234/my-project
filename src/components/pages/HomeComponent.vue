@@ -28,8 +28,7 @@
 
         },
         deletequote(index){
-            console.log('...........acac')
-            console.log(index)
+
             this.quotes.splice(index,1)
 
 

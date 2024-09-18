@@ -8,6 +8,7 @@ import UserC from '@/components/pages/Users/UserC.vue';
 import UserStart from '@/components/pages/Users/UserStart.vue';
 import UserDetail from '@/components/pages/Users/UserDetail.vue';
 import UserEdit from '@/components/pages/Users/UserEdit.vue';
+import vuexComponent from '@/components/pages/vuexComponent.vue';
 const routes = [
   {
     path: '/',
@@ -38,6 +39,11 @@ const routes = [
       {path:':id', component: UserDetail},
       {path:':id/edit', component: UserEdit, name: "userEdit"}
     ]
+  },
+  {
+    path: '/vuex',
+    name: 'vuex',
+    component: vuexComponent
   },
 
   {path: '/redirect.me', redirect:'/user'}
