@@ -1,19 +1,21 @@
 <template>
     <div>
-        <button class="btn btn-primary" @click="increment">Increment</button>
-        <button class="btn btn-primary" @click="decrement">Decrement</button>
+ 
+      <button class="btn btn-primary" @click="incrementar">Incrementar</button>
+      <button class="btn btn-primary" @click="decrementar">Decrementar</button>
     </div>
-</template>
-
-<script>
-export default {
+  </template>
+  
+  <script>
+  import { mapActions } from 'vuex';
+  export default{
     methods: {
-        increment() {
-            this.$emit('updated', 1);
-        },
-        decrement() {
-            this.$emit('updated', -1);
-        }
-    }
-};
-</script>
+    ...mapActions(['incrementar', 'decrementar'])  // Usa las acciones
+  }
+
+  }
+  
+
+
+  </script>
+  

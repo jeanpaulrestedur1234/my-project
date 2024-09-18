@@ -1,9 +1,7 @@
 <template>
-    <p>Counter is: {{ counter }}</p>
+    <p>Counter is: {{ $store.state.contador  }}</p>
 </template>
 
 <script>
-export default {
-    props: ['counter']
-};
+
 </script>

@@ -10,8 +10,8 @@
   
   </template>
   <script>
-  import QuoteGrid from '../Quotes/QuoteGrid.vue';
- import NewQuote from '../Quotes/NewQuote.vue';
+  import QuoteGrid from './Quotes/QuoteGrid.vue';
+ import NewQuote from './Quotes/NewQuote.vue';
   export default{
       data: function(){
           return{
