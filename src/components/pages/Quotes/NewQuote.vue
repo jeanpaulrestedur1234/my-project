@@ -17,6 +17,7 @@ export default {
     },
     methods: {
         CreateNew() {
+            
             this.$store.dispatch('addQuote', this.quote); // Usar el store de Vuex
             this.quote = ''; // Limpiar el textarea después de agregar la cita
         }

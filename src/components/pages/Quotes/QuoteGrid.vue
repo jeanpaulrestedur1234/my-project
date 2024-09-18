@@ -36,7 +36,8 @@ export default {
 <style>
 .row{
     text-align: center;
-
+    
+   
 }
 
 </style>
