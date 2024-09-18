@@ -28,4 +28,10 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.row{
+    text-align: center;
+
+}
+
+</style>

@@ -4,6 +4,10 @@ import facial_scanner from '@/components/pages/facial_scanner.vue';
 import HomeComponent from '@/components/pages/HomeComponent.vue';
 import filtersComponent from '@/components/pages/filtersComponent.vue';
 import AnimationsComponent from '@/components/pages/AnimationsComponent.vue';
+import UserC from '@/components/pages/Users/UserC.vue';
+import UserStart from '@/components/pages/Users/UserStart.vue';
+import UserDetail from '@/components/pages/Users/UserDetail.vue';
+import UserEdit from '@/components/pages/Users/UserEdit.vue';
 const routes = [
   {
     path: '/',
@@ -25,7 +29,18 @@ const routes = [
     name: 'animation',
     component: AnimationsComponent
   },
+  {
+    path: '/user',
+    name: 'user',
+    component: UserC,
+    children:[
+      {path:'', component: UserStart},
+      {path:':id', component: UserDetail},
+      {path:':id/edit', component: UserEdit, name: "userEdit"}
+    ]
+  },
 
+  {path: '/redirect.me', redirect:'/user'}
 
 
 ];

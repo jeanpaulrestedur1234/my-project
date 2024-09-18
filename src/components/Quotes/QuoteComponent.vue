@@ -1,8 +1,8 @@
 <template>
-    <div class="col-sm6 col-md-4 col-lg-3">
+    <div class="col-sm6 col-md-4 col-lg-6">
         <div class ="panel panel-default">
             <div class="panel-body quote">
-                <slot></slot>
+                <slot>   </slot>
         
             </div>
 
@@ -22,26 +22,35 @@ export default{
 
 <style>
  .panel-body{
+
     font-family: 'Arizonia', cursive;
     font-size: 16px;
-    color: #796e6e;
-    background-color: rgb(197, 197, 212);
-    
+    color: #070707;
+    background-color: rgb(206, 206, 206);
+    min-height: 80px; /* Altura mínima para crecer verticalmente */   
     border-radius: 8px;
+    word-wrap: break-word; /* Permitir que las palabras se ajusten dentro del contenedor */
+    word-break: break-word; /* Romper las palabras largas si es necesario */
+    align-content: center;
+    
+
+  
     
  
  }
  .panel {
     margin-bottom: 20px; /* Espacio entre paneles */
+    opacity:0.5;
 }
 
 
  .quote{
     cursor: pointer;
-    padding: auto;
+  
+    
  }
  .quote::hover {
-    background-color: rgb(30, 46, 19);
+    background-color: rgb(191, 245, 155);
 
 
  }
